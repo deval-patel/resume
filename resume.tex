@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+% %----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Deval Patel}{Software Engineer}% Large heading - your name
+\Sep
+\cvsubheading{\faEnvelope\hspace{0.5em}devalrocket@gmail.com\hspace{0.5em}\bluebullet\hspace{0.5em}\faPhone\hspace{0.5em}(647)-470-7505 \hspace{0.5em}\bluebullet\hspace{0.5em}\faGithub \hspace{0.5em}\href{https://github.com/deval-patel}{deval-patel}\hspace{0.5em}\bluebullet\hspace{0.5em}\faLinkedin\hspace{0.2em}\href{https://www.linkedin.com/in/deval-patel-82609b21a/}{Deval Patel}}
+\SmallSep
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+%------------------------------------------------
+
+\CVItem[\textit{Embedded ML Software Engineer}\hfill May 2022 - Present\par]{Qualcomm}{
+	\begin{itemize}
+		\item Led eNPU (embedded neural processing unit) driver design in \textbf{C} for Qualcomm's LPAI (low power AI) automotive chip through HPG-based modifications for multi-master DSP support, enabling faster iteration development and 3 months ahead of pre-silicon schedule.
+		\item Achieved cross-platform support (mobile, automotive, IoT, XR/VR) for the eNPU driver through code refactoring and streamlining, resulting in a simpler, unified codebase.
+		\item Optimized eNPU driver code for ultra-low latency (2-3 microseconds) on an \textbf{RTOS}, achieving industry-leading performance and real-time processing.
+		\item Reduced eNPU driver TCM memory footprint by 50\% through LPI/non-LPI code separation.
+		\item Performed pre-silicon verification on FPGAs identifying and rectifying driver issues, accelerating SoC bring-up and reducing development time.
+		\item Built a system for high fidelity eAI model profiling (hardware vs. software scheduling) to identify latency bottlenecks in customer models. Automated this workflow using a custom \textbf{Python} script invoking \textbf{ADB} shell commands (model/binary deployment, test execution, CSV data collection, Excel report generation).
+		\item Delivered a well-received presentation to internal and external teams on next-gen automotive chip driver development, enhancing their understanding of new architecture and functionalities.
+	\end{itemize}
+}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\CVItem[\textit{Teaching Assistant for Operating Systems/Software Design/Intro. to CS}\hfill Jan 2020 - May 2022\par]{University of Toronto}{
+	% Courses Taught: 1 x Operating Systems (CSC369), 3 x Software Design (CSC207), 1 x Intro. to Computer Science (CSC148),\\1 x Intro. to Computer Programming (CSC108)
+	\begin{itemize}
+		\item Led 2 hour practical sessions communicating troubling concepts and guiding 30 students through exercises while encouraging a positive and collaborative environment.
+		\item Solely created major assignments with \textbf{Python} and \textbf{Java}.
+		\item Created automarking test suites using \textbf{PyTest}, \textbf{JUnit} and \textbf{Bash} resulting in a 200\% increase in\\marking efficiency.
+	\end{itemize}
+}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\CVSection{Projects}
+
+
+%--------------------------------------------------------------
+
+\CVItem[\textit{Lead Developer}\hfill Jan 2021 - May 2022\par]{\href{https://utapcsc.utm.utoronto.ca/utap/}{TA Application System}}{
+	\begin{itemize}
+		% \item Enforced accessibility compliance on a codebase used for the TA Application System.
+		\item Migrated an existing \textbf{HTML} application to \textbf{React} and created reusable components resulting in a reduction of duplicate code.
+		\item Added REST API endpoints allowing contracts to be generated, downloaded, signed and uploaded using \textbf{ExpressJS} and \textbf{PostgreSQL} resulting in a 200\% reduction of manual labour.
+		\item Developed \textbf{SQL} queries enabling instructors to parse student applications by grade, time availability, and many other filters.
+
+	\end{itemize}
+}
+% ----------------------------------
+
+\CVItem[\textit{Co-Creator/Developer} \hfill Jan 2021 - May 2021\par]{Carden}
+{
+	\begin{itemize}
+		\item Created an appealing website using \textbf{React} and \textbf{MaterialUI} allowing users to create and send interactive e-cards at the time of a global pandemic.
+		\item Stored and retrieved user data, media and e-cards using \textbf{MongoDB} and \textbf{AWS S3}.
+		%       % \item Stored images and videos using \textbf{AWS S3} allowing users to embed media into the e-cards.
+		% \item Allowed users to embed media into e-cards by storing uploaded images and videos into \textbf{AWS S3}.
+		% \item Containerized the application with \textbf{Docker} enabling a consistent development and deployment environment using \textbf{AWS Elastic Beanstalk}.
+	\end{itemize}
+}
+
+`%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem[HBSc. Computer Science Specialist - GPA: 3.52 \hfill September 2018 - April 2022 \par]{University of Toronto}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Skills and Technologies}
+\vspace{-3mm}
+% %------------------------------------------------
+\begin{multicols}{2}
+	\CVSkill{Software Tools}{Docker, AWS, Make/Cmake, gdb}
+	\CVSkill{Front-end}{HTML, CSS, React, Express, Vue}
+	\columnbreak
+	\CVSkill{Programming}{C/C++, Python, JavaScript, Java}
+	\CVSkill{Back-end}{REST, SQL, MongoDB, Neo4J}
+\end{multicols}
+%------------------------------------------------
+% %------------------------------------------------
+
+\end{document}

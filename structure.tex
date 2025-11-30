@@ -1,0 +1,70 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% Structure Specification File
+% Version 1.1 (19/6/2016)
+%
+% This file has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage{XCharter} % Use the Bitstream Charter font
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry} % Modify margins
+
+\usepackage{graphicx} % Required for figures
+\usepackage{fontawesome} % Required for Logos
+
+\usepackage{hyperref} % URLs
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for custom colours
+
+\usepackage{tikz} % Required for the horizontal rule
+\usepackage{enumitem} % Required for modifying lists
+\usepackage{multicol}
+\setlist{noitemsep,nolistsep} % Remove spacing within and around lists
+
+
+\pagestyle{empty} % Disable all page numbering
+
+\setlength{\parindent}{0pt} % Stop paragraph indentation
+
+%----------------------------------------------------------------------------------------
+%	NEW COMMANDS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvheading}[2]{{\centering\Huge\bfseries\color{RoyalBlue} #1 \color{Gray}| #2\par}} % New command for the CV heading
+\newcommand{\cvsubheading}[1]{{\centering\footnotesize\bfseries #1 \par}} % New command for the CV subheading
+\newcommand{\BigSep}{\vspace{8em}} % New command for the spacing between headings
+\newcommand{\Sep}{\vspace{0.2em}} % New command for the spacing between headings
+\newcommand{\SmallSep}{\vspace{0.5em}} % New command for the spacing within headings
+
+\newcommand{\CVSection}[1]{ % New command for the headings within sections
+	{\large\textbf{\color{RoyalBlue}#1}}\par
+	\SmallSep% Used for spacing
+}
+
+\newcommand{\CVItem}[3][]{ % New command for the item descriptions
+	\textbf{#2}\par
+	#1
+	#3
+	\SmallSep% Used for spacing
+}
+\newcommand{\CVSkill}[2]{ % New command for the item descriptions
+	\textbf{#1}: #2\par
+	\SmallSep% Used for spacing
+}
+\newcommand{\bluebullet}{\tikz\draw[RoyalBlue,fill=RoyalBlue] (0,0) circle (0.4ex);} % New command for the blue bullets
+
