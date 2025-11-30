@@ -1,126 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deval Patel - ML/Embedded Systems Resume (1 Page)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\documentclass[a4paper,12pt]{memoir}
+\input{structure.tex}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[a4paper,12pt]{memoir} % Font and paper size
-
-\input{structure.tex} % Include the file specifying document layout and packages
-
-% %----------------------------------------------------------------------------------------
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	HEADING
+% HEADING
 %----------------------------------------------------------------------------------------
 
-\cvheading{Deval Patel}{Software Engineer}% Large heading - your name
+\cvheading{Deval Patel}{Software Engineer}
 \Sep
-\cvsubheading{\faEnvelope\hspace{0.5em}devalrocket@gmail.com\hspace{0.5em}\bluebullet\hspace{0.5em}\faPhone\hspace{0.5em}(647)-470-7505 \hspace{0.5em}\bluebullet\hspace{0.5em}\faGithub \hspace{0.5em}\href{https://github.com/deval-patel}{deval-patel}\hspace{0.5em}\bluebullet\hspace{0.5em}\faLinkedin\hspace{0.2em}\href{https://www.linkedin.com/in/deval-patel-82609b21a/}{Deval Patel}}
+\cvsubheading{\faEnvelope\hspace{0.5em}devalrocket@gmail.com\hspace{0.5em}\bluebullet\hspace{0.5em}\faPhone\hspace{0.5em}(647)-470-7505\hspace{0.5em}\bluebullet\hspace{0.5em}\faGithub\hspace{0.5em}\href{https://github.com/deval-patel}{deval-patel}\hspace{0.5em}\bluebullet\hspace{0.5em}\faLinkedin\hspace{0.2em}\href{https://www.linkedin.com/in/deval-patel-82609b21a/}{Deval Patel}}
 \SmallSep
 
 %----------------------------------------------------------------------------------------
-%	EXPERIENCE
+% EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \CVSection{Experience}
 
 %------------------------------------------------
+\CVItem[\textit{SDE II  — Graphics Kernel (Core OS)}\hfill 2025 - Present\par]{Microsoft}{
+\begin{itemize}
+    \item Investigated GPU/OS performance across \textbf{NVIDIA, AMD, Intel, and Qualcomm} hardware using \textbf{GPUView}, \textbf{WPA}, and kernel trace analysis, identifying vendor driver issues and OS scheduling inefficiencies.
+    \item Diagnosed and fixed a critical scheduling bug where workloads were incorrectly placed into a \textbf{penalty box} after power-transition sleep states, restoring correct QoS behavior and improving GPU responsiveness.
+    \item Led design for the next-generation \textbf{Hardware Scheduler Logging System}, enabling packet-level start/stop telemetry, VM utilization metrics, and significantly improved debugging scope for GPUView.
+    \item Enhanced \textbf{TDR (Timeout Detection \& Recovery)} logic to better identify true GPU hangs and reduce false positives during hardware bring-up and partner validation.
+    \item Built and flashed Windows OS test builds, performed low-level validation on internal hardware, and debugged crashes/hangs using \textbf{WinDBG} and GPU scheduling traces.
+\end{itemize}
+}
 
-\CVItem[\textit{Embedded ML Software Engineer}\hfill May 2022 - Present\par]{Qualcomm}{
-	\begin{itemize}
-		\item Led eNPU (embedded neural processing unit) driver design in \textbf{C} for Qualcomm's LPAI (low power AI) automotive chip through HPG-based modifications for multi-master DSP support, enabling faster iteration development and 3 months ahead of pre-silicon schedule.
-		\item Achieved cross-platform support (mobile, automotive, IoT, XR/VR) for the eNPU driver through code refactoring and streamlining, resulting in a simpler, unified codebase.
-		\item Optimized eNPU driver code for ultra-low latency (2-3 microseconds) on an \textbf{RTOS}, achieving industry-leading performance and real-time processing.
-		\item Reduced eNPU driver TCM memory footprint by 50\% through LPI/non-LPI code separation.
-		\item Performed pre-silicon verification on FPGAs identifying and rectifying driver issues, accelerating SoC bring-up and reducing development time.
-		\item Built a system for high fidelity eAI model profiling (hardware vs. software scheduling) to identify latency bottlenecks in customer models. Automated this workflow using a custom \textbf{Python} script invoking \textbf{ADB} shell commands (model/binary deployment, test execution, CSV data collection, Excel report generation).
-		\item Delivered a well-received presentation to internal and external teams on next-gen automotive chip driver development, enhancing their understanding of new architecture and functionalities.
-	\end{itemize}
+%------------------------------------------------
+\CVItem[\textit{Embedded ML Software Engineer}\hfill 2022 - 2025\par]{Qualcomm}{
+\begin{itemize}
+    \item Designed eNPU (embedded neural processing unit) driver in \textbf{C} for Qualcomm’s LPAI automotive chip, enabling multi-master DSP support and advancing pre-silicon schedules by 3 months.
+    \item Optimized eNPU firmware for \textbf{2–3µs} latency on RTOS, achieving industry-leading real-time ML inference performance.
+    \item Delivered cross-platform driver support across automotive, mobile, IoT, and XR/VR devices through large-scale refactoring and system unification.
+    \item Performed pre-silicon verification on FPGA platforms, identifying and resolving critical bring-up issues for next-generation SoCs.
+    \item Built automated \textbf{eAI model profiling} pipeline (Python + ADB) comparing HW vs. SW scheduling to diagnose model latency bottlenecks for internal customers.
+\end{itemize}
 }
 
 %------------------------------------------------
 
-%------------------------------------------------
-
-\CVItem[\textit{Teaching Assistant for Operating Systems/Software Design/Intro. to CS}\hfill Jan 2020 - May 2022\par]{University of Toronto}{
-	% Courses Taught: 1 x Operating Systems (CSC369), 3 x Software Design (CSC207), 1 x Intro. to Computer Science (CSC148),\\1 x Intro. to Computer Programming (CSC108)
-	\begin{itemize}
-		\item Led 2 hour practical sessions communicating troubling concepts and guiding 30 students through exercises while encouraging a positive and collaborative environment.
-		\item Solely created major assignments with \textbf{Python} and \textbf{Java}.
-		\item Created automarking test suites using \textbf{PyTest}, \textbf{JUnit} and \textbf{Bash} resulting in a 200\% increase in\\marking efficiency.
-	\end{itemize}
-}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
+\Sep
 
 %----------------------------------------------------------------------------------------
-%	Projects
+% PROJECTS
 %----------------------------------------------------------------------------------------
 
 \CVSection{Projects}
 
-
-%--------------------------------------------------------------
-
-\CVItem[\textit{Lead Developer}\hfill Jan 2021 - May 2022\par]{\href{https://utapcsc.utm.utoronto.ca/utap/}{TA Application System}}{
-	\begin{itemize}
-		% \item Enforced accessibility compliance on a codebase used for the TA Application System.
-		\item Migrated an existing \textbf{HTML} application to \textbf{React} and created reusable components resulting in a reduction of duplicate code.
-		\item Added REST API endpoints allowing contracts to be generated, downloaded, signed and uploaded using \textbf{ExpressJS} and \textbf{PostgreSQL} resulting in a 200\% reduction of manual labour.
-		\item Developed \textbf{SQL} queries enabling instructors to parse student applications by grade, time availability, and many other filters.
-
-	\end{itemize}
-}
-% ----------------------------------
-
-\CVItem[\textit{Co-Creator/Developer} \hfill Jan 2021 - May 2021\par]{Carden}
-{
-	\begin{itemize}
-		\item Created an appealing website using \textbf{React} and \textbf{MaterialUI} allowing users to create and send interactive e-cards at the time of a global pandemic.
-		\item Stored and retrieved user data, media and e-cards using \textbf{MongoDB} and \textbf{AWS S3}.
-		%       % \item Stored images and videos using \textbf{AWS S3} allowing users to embed media into the e-cards.
-		% \item Allowed users to embed media into e-cards by storing uploaded images and videos into \textbf{AWS S3}.
-		% \item Containerized the application with \textbf{Docker} enabling a consistent development and deployment environment using \textbf{AWS Elastic Beanstalk}.
-	\end{itemize}
+\CVItem[\textit{Lead ML Engineer}\hfill 2025 - Present\par]{\href{https://github.com/deval-patel/careOverflow}{CareOverflow — Disease Diagnosis with BioBERT}}{
+\begin{itemize}
+    \item Built a complete ML pipeline using \textbf{PyTorch}, \textbf{BioBERT}, and custom transformers to classify symptoms into 41 diseases (85–95\% accuracy depending on configuration).
+    \item Implemented dataset preprocessing, structured vs.\ natural-language formatting, and train/val/test splitting with custom PyTorch Dataset classes.
+    \item Designed a modular configuration-driven training framework supporting AdamW optimization, label smoothing, gradient accumulation, and per-class evaluation metrics.
+    \item Developed inference engine for both structured and natural-language inputs, supporting top-\emph{k} predictions and GPU/CPU dispatch.
+    \item Architected a pluggable interface allowing additional transformer models and trainers with minimal integration overhead.
+\end{itemize}
 }
 
-`%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
+\Sep
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+% EDUCATION
 %----------------------------------------------------------------------------------------
 
 \CVSection{Education}
 
-%------------------------------------------------
+\CVItem[MS in Computer Science (Machine Learning Specialization) --- GPA: 4.0 \hfill 2025 -- Present]{Georgia Institute of Technology}{}
 
-\CVItem[HBSc. Computer Science Specialist - GPA: 3.52 \hfill September 2018 - April 2022 \par]{University of Toronto}
+\CVItem[HBSc. Computer Science Specialist --- GPA: 3.52 \hfill 2018 -- 2022]{University of Toronto}{}
 
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
+\Sep
 
 %----------------------------------------------------------------------------------------
-%	SKILLS
+% SKILLS
 %----------------------------------------------------------------------------------------
 
 \CVSection{Skills and Technologies}
 \vspace{-3mm}
-% %------------------------------------------------
+
 \begin{multicols}{2}
-	\CVSkill{Software Tools}{Docker, AWS, Make/Cmake, gdb}
-	\CVSkill{Front-end}{HTML, CSS, React, Express, Vue}
-	\columnbreak
-	\CVSkill{Programming}{C/C++, Python, JavaScript, Java}
-	\CVSkill{Back-end}{REST, SQL, MongoDB, Neo4J}
+    \CVSkill{Systems/OS}{C, C++, RTOS, Linux, Drivers}
+    \CVSkill{ML/AI}{PyTorch, Transformers, BioBERT, CUDA}
+    \columnbreak
+    \CVSkill{Tools}{Make/CMake, Docker, ADB, Git, GDB}
+    \CVSkill{Other}{Python, SQL, Bash, Web}
 \end{multicols}
-%------------------------------------------------
-% %------------------------------------------------
 
 \end{document}

@@ -4,38 +4,37 @@ document
 # Deval Patel
 **Software Engineer**
 0.5em
-devalrocket@gmail.com0.5em0.5em0.5em(647)-470-7505 0.5em0.5em 0.5emhttps://github.com/deval-pateldeval-patel0.5em0.5em0.2emhttps://www.linkedin.com/in/deval-patel-82609b21a/Deval Patel
+devalrocket@gmail.com0.5em0.5em0.5em(647)-470-75050.5em0.5em0.5emhttps://github.com/deval-pateldeval-patel0.5em0.5em0.2emhttps://www.linkedin.com/in/deval-patel-82609b21a/Deval Patel
 ## Experience
-### Qualcomm — Embedded ML Software Engineer May 2022 - Present
-		- Led eNPU (embedded neural processing unit) driver design in C for Qualcomm's LPAI (low power AI) automotive chip through HPG-based modifications for multi-master DSP support, enabling faster iteration development and 3 months ahead of pre-silicon schedule.
-		- Achieved cross-platform support (mobile, automotive, IoT, XR/VR) for the eNPU driver through code refactoring and streamlining, resulting in a simpler, unified codebase.
-		- Optimized eNPU driver code for ultra-low latency (2-3 microseconds) on an RTOS, achieving industry-leading performance and real-time processing.
-		- Reduced eNPU driver TCM memory footprint by 50\
-		- Performed pre-silicon verification on FPGAs identifying and rectifying driver issues, accelerating SoC bring-up and reducing development time.
-		- Built a system for high fidelity eAI model profiling (hardware vs. software scheduling) to identify latency bottlenecks in customer models. Automated this workflow using a custom Python script invoking ADB shell commands (model/binary deployment, test execution, CSV data collection, Excel report generation).
-		- Delivered a well-received presentation to internal and external teams on next-gen automotive chip driver development, enhancing their understanding of new architecture and functionalities.
-### University of Toronto — Teaching Assistant for Operating Systems/Software Design/Intro. to CS Jan 2020 - May 2022
-		- Led 2 hour practical sessions communicating troubling concepts and guiding 30 students through exercises while encouraging a positive and collaborative environment.
-		- Solely created major assignments with Python and Java.
-		- Created automarking test suites using PyTest, JUnit and Bash resulting in a 200\
+### Microsoft — SDE II  — Graphics Kernel (Core OS) 2025 - Present
+    - Investigated GPU/OS performance across NVIDIA, AMD, Intel, and Qualcomm hardware using GPUView, WPA, and kernel trace analysis, identifying vendor driver issues and OS scheduling inefficiencies.
+    - Diagnosed and fixed a critical scheduling bug where workloads were incorrectly placed into a penalty box after power-transition sleep states, restoring correct QoS behavior and improving GPU responsiveness.
+    - Led design for the next-generation Hardware Scheduler Logging System, enabling packet-level start/stop telemetry, VM utilization metrics, and significantly improved debugging scope for GPUView.
+    - Enhanced TDR (Timeout Detection \& Recovery) logic to better identify true GPU hangs and reduce false positives during hardware bring-up and partner validation.
+    - Built and flashed Windows OS test builds, performed low-level validation on internal hardware, and debugged crashes/hangs using WinDBG and GPU scheduling traces.
+### Qualcomm — Embedded ML Software Engineer 2022 - 2025
+    - Designed eNPU (embedded neural processing unit) driver in C for Qualcomm’s LPAI automotive chip, enabling multi-master DSP support and advancing pre-silicon schedules by 3 months.
+    - Optimized eNPU firmware for 2–3µs latency on RTOS, achieving industry-leading real-time ML inference performance.
+    - Delivered cross-platform driver support across automotive, mobile, IoT, and XR/VR devices through large-scale refactoring and system unification.
+    - Performed pre-silicon verification on FPGA platforms, identifying and resolving critical bring-up issues for next-generation SoCs.
+    - Built automated eAI model profiling pipeline (Python + ADB) comparing HW vs. SW scheduling to diagnose model latency bottlenecks for internal customers.
 ## Projects
-### https://utapcsc.utm.utoronto.ca/utap/ — Lead Developer Jan 2021 - May 2022
-TA Application System
-		- Migrated an existing HTML application to React and created reusable components resulting in a reduction of duplicate code.
-		- Added REST API endpoints allowing contracts to be generated, downloaded, signed and uploaded using ExpressJS and PostgreSQL resulting in a 200\
-		- Developed SQL queries enabling instructors to parse student applications by grade, time availability, and many other filters.
-[Co-Creator/Developer  Jan 2021 - May 2021]Carden
-		- Created an appealing website using React and MaterialUI allowing users to create and send interactive e-cards at the time of a global pandemic.
-		- Stored and retrieved user data, media and e-cards using MongoDB and AWS S3.
-`
+### https://github.com/deval-patel/careOverflow — Lead ML Engineer 2025 - Present
+CareOverflow — Disease Diagnosis with BioBERT
+    - Built a complete ML pipeline using PyTorch, BioBERT, and custom transformers to classify symptoms into 41 diseases (85–95\
+    - Implemented dataset preprocessing, structured vs.\ natural-language formatting, and train/val/test splitting with custom PyTorch Dataset classes.
+    - Designed a modular configuration-driven training framework supporting AdamW optimization, label smoothing, gradient accumulation, and per-class evaluation metrics.
+    - Developed inference engine for both structured and natural-language inputs, supporting top-k predictions and GPU/CPU dispatch.
+    - Architected a pluggable interface allowing additional transformer models and trainers with minimal integration overhead.
 ## Education
-[HBSc. Computer Science Specialist - GPA: 3.52  September 2018 - April 2022 ]University of Toronto
+### Georgia Institute of Technology — MS in Computer Science (Machine Learning Specialization) --- GPA: 4.0  2025 -- Present
+### University of Toronto — HBSc. Computer Science Specialist --- GPA: 3.52  2018 -- 2022
 ## Skills and Technologies
 -3mm
 multicols2
-	Software ToolsDocker, AWS, Make/Cmake, gdb
-	Front-endHTML, CSS, React, Express, Vue
-	ProgrammingC/C++, Python, JavaScript, Java
-	Back-endREST, SQL, MongoDB, Neo4J
+    Systems/OSC, C++, RTOS, Linux, Drivers
+    ML/AIPyTorch, Transformers, BioBERT, CUDA
+    ToolsMake/CMake, Docker, ADB, Git, GDB
+    OtherPython, SQL, Bash, Web
 multicols
 document
